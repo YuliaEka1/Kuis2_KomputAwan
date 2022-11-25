@@ -29,14 +29,14 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>NIS:</strong>
-                <input type="text" name="NIS" class="form-control" placeholder="NIS SISWA">
+                <strong>NIM:</strong>
+                <input type="text" name="NIS" class="form-control" placeholder="NIM MAHASISWA">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nama Siswa:</strong>
-                <input type="text" name="NamaSiswa" class="form-control" placeholder="NAMA SISWA">
+                <strong>Nama Mahasiswa:</strong>
+                <input type="text" name="NamaSiswa" class="form-control" placeholder="NAMA MAHASISWA">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
