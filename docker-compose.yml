@@ -7,21 +7,21 @@ services:
         uid: 1000
       context: ./
       dockerfile: Dockerfile
-    image: quis2
-    container_name: quis2-app
+    image: kuis2
+    container_name: kuis2-app
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
       - ./:/var/www
     networks:
-      - quis2
+      - kuis2
 
   db:
     image: mysql:8.0
-    container_name: quis2-db
+    container_name: kuis2-db
     restart: unless-stopped
     environment:
-      MYSQL_DATABASE: quis2
+      MYSQL_DATABASE: kuis2
       MYSQL_ROOT_PASSWORD: yulia
       MYSQL_PASSWORD: yulia
       MYSQL_USER: yulia
@@ -32,7 +32,7 @@ services:
 
   nginx:
     image: nginx:alpine
-    container_name: quis2-nginx
+    container_name: kuis2-nginx
     restart: unless-stopped
     ports:
       - 8000:80
@@ -40,7 +40,7 @@ services:
       - ./:/var/www
       - ./docker-compose/nginx:/etc/nginx/conf.d/
     networks:
-      - quis2
+      - kuis2
 
 networks:
   kuis2:
